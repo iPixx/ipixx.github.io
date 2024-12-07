@@ -6,7 +6,7 @@ categories: [docker, stack]
 tags: [docker, vps]
 ---
 
-Nel post precedente abbiamo visto come creare un [Docker stack](/2024/11/25/docker-stack.html). In questo post vedremo come fare il deployment un Docker stack su un server remoto.
+Nel post precedente abbiamo visto come creare un Docker stack. In questo post vedremo come fare il deployment un Docker stack su un server remoto.
 
 # Selezionare il corretto docker context
 
