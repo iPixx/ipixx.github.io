@@ -2,7 +2,8 @@
 layout: post
 title: "Learning Docker - Deploy a Docker Stack"
 date: 2024-11-30 11:45:00 +0100
-categories: docker vps
+categories: [docker, stack]
+tags: [docker, vps]
 ---
 
 Nel post precedente abbiamo visto come creare un [Docker stack](/2024/11/25/docker-stack.html). In questo post vedremo come fare il deployment un Docker stack su un server remoto.

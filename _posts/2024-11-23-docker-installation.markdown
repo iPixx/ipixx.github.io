@@ -2,7 +2,8 @@
 layout: post
 title: "Docker installation"
 date: 2024-11-23 12:49:00 +0100
-categories: docker
+categories: [docker, installation]
+tags: docker
 ---
 
 Ecco i miei appunti su come ho installato Docker in una VPS.
