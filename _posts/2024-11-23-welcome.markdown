@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Un primo post per provare..."
+date: 2024-11-23 11:00:00 +0100
+categories: jekyll
+---
+
+Vorrei raccogliere alcuni appunti su questo sito. In italiano o in inglese.
+
+Forse un post o una pagina o anche due.
+
+{% highlight shell %}
+
+$ adduser newuser
+$ usermod -aG sudo newuser
+
+root@server:~# su - newuser
+
+root@server:~# su - newuser
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+{% endhighlight %}

@@ -1,0 +1,96 @@
+---
+layout: post
+title: "Tmux"
+date: 2024-11-24 10:51:53 +0100
+categories: tmux
+---
+
+Appunti su tmux.
+
+In tmux ci sono tre oggetti principali:
+
+- session
+
+  - collezione di una o più finestre
+  - normalmente c'è una sola sessione attiva per utente (attach/detach)
+
+- window
+
+  - schermo virtuale
+  - una sessione può contenere più finestre
+  - ogni finestra può contenere più pannelli
+
+- pane
+  - suddivisione di una finestra
+  - ogni pannello può contenere un terminale
+
+## Comandi
+
+La `prefix key` di default è `Ctrl+b`.
+
+Un sito utile per trovare le combinazioni di tasti per il proprio sistema operativo è: [questo](https://tmuxcheatsheet.com/).
+
+### Sessioni
+
+All'avvio di tmux, viene creata una sessione con un nome numerico. È possibile creare sessioni con nomi personalizzati.
+
+All'esterno di tmux:
+
+- `tmux` - avvia una nuova sessione e la attacca (attach)
+
+- `tmux new -s session_name` - crea una nuova sessione
+- `tmux attach -t session_name` - attacca una sessione
+- `tmux switch -t session_name` - cambia sessione
+- `tmux list-sessions` - elenca le sessioni
+- `tmux kill-session -t session_name` - termina una sessione
+- `tmux kill-server` - termina tutte le sessioni
+
+All'interno di tmux:
+
+- `prefix key d` - detach dalla sessione corrente
+- `prefix key s` - elenca le sessioni
+- `prefix key $` - rinomina la sessione corrente
+- `prefix key (` - vai alla sessione precedente
+- `prefix key )` - vai alla sessione successiva
+
+### Finestre
+
+Per passare ad una finestra, premere `prefix key` seguito dal numero della finestra. Il numero della finestra è indicato nella barra del titolo.
+
+- `prefix key c` - crea una nuova finestra
+- `prefix key ,` - rinomina la finestra
+- `prefix key w` - elenca le finestre
+- `prefix key n` - vai alla finestra successiva
+- `prefix key p` - vai alla finestra precedente
+- `prefix key f` - cerca una finestra
+- `prefix key &` - chiudi la finestra corrente
+
+### Pannelli
+
+- `prefix key %` - crea un nuovo pannello verticale
+- `prefix key "` - crea un nuovo pannello orizzontale
+- `prefix key o` - vai al pannello successivo
+- `prefix key ;` - vai al pannello precedente
+- `prefix key x` - chiudi il pannello corrente
+- `prefix key z` - (zoom) ingrandisci il pannello corrente (premere nuovamente per ripristinare)
+  Questa funzione permette di ingrandire un pannello alla dimensione di una finestra e ripristinarlo alla dimensione originale.
+- `prefix key {` - sposta il pannello corrente a sinistra
+- `prefix key }` - sposta il pannello corrente a destra
+
+### Altro
+
+- `prefix key d` - detach dalla sessione
+- `prefix key ?` - mostra la lista dei comandi
+- `prefix key :` - prompt dei comandi
+- `prefix key [` - entra in modalità copia
+- `prefix key ]` - incolla il testo copiato
+
+### Configurazione
+
+#### Vim Tmux Navigator
+
+Il plugin [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) permette di navigare tra Vim e Tmux senza dover usare la `prefix key`.
+
+Il movimento tra pannelli avviene con `Ctrl+h`, `Ctrl+j`, `Ctrl+k`, `Ctrl+l` come in Vim.
+
+`Ctrl+\` permette di passare da Vim a Tmux e viceversa.
