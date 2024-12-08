@@ -5,7 +5,7 @@ order: 4
 ---
 
 > Work in progress
-{: .prompt-tip }
+{: .prompt-warning }
 
 > Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
 {: .prompt-tip }

@@ -40,7 +40,7 @@ copyright:
     Eccetto quando esplicitamente menzionato, i post di questo blog sono da ritenersi sotto
     i termini di licenza Creative Commons Attribution-Noncommercial-Sharealike 4.0 International (CC BY-NC-SA 4.0).
 
-meta: Servizio offerto da :PLATFORM con tema :THEME :HOST
+meta: Servizio offerto da :PLATFORM con tema :THEME
 not_found:
   statement: Ci scusiamo, non è stato possibile trovare l'URL in questione. Potrebbe puntare ad una pagina non esistente.
 
