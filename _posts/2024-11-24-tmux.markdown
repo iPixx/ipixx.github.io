@@ -3,6 +3,7 @@ layout: post
 title: "Tmux"
 date: 2024-11-24 10:51:53 +0100
 categories: tmux
+tags: [tmux, terminal]
 ---
 
 Appunti su tmux.

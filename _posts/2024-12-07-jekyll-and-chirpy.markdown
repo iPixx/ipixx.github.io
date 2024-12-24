@@ -1,8 +1,8 @@
 ---
 title: "Jekyll and Chirpy"
 date: 2024-12-07 00:00:00 +0000
-categories: [jekyll, jekyll-theme]
-tags: [jekyll, chirpy, jekyll-theme]
+categories: [jekyll, theme]
+tags: [jekyll, chirpy, theme]
 ---
 [Chirpy](https://chirpy.cotes.page/) è un tema Jekyll per la creazione di blog personali di natura tecnica.
 
