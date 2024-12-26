@@ -2,11 +2,13 @@
 layout: post
 title: "Aggiungere un utente al gruppo sudo"
 date: 2024-11-23 11:00:00 +0100
-categories: [linux, shell]
-tags: [linux, shell, vps]
+categories: [vps, user access management]
+tags: [linux, shell, security]
 ---
 
 Una delle prime cose che faccio quando creo un nuovo server è aggiungere un nuovo utente e assegnargli i permessi di sudo. Questo mi consente di eseguire comandi come amministratore senza dover accedere come root.
+
+É importante notare che l'accesso come root è rischioso, poiché consente agli attaccanti di ottenere l'accesso completo al sistema senza dover autenticarsi. Per questo motivo, è consigliabile disabilitare l'accesso diretto come utente root e utilizzare un utente con privilegi di amministratore per eseguire i comandi come amministratore.
 
 ## Creare un nuovo utente
 
@@ -29,7 +31,11 @@ $ usermod -aG sudo newuser
 Per verificare che il nuovo utente abbia i permessi di sudo, accedere al server con il nuovo utente e provare a eseguire un comando come amministratore.
 
 ```shell
-$ su - newuser
+root@hostname:~# su - newuser
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+newuser@hostname:~$ sudo <command>
 ```
 
 Una volta connessi con il nuovo utente, provare a eseguire un comando come amministratore utilizzando `sudo`.

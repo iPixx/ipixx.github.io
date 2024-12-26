@@ -2,7 +2,7 @@
 layout: post
 title: "Docker Swarm Secrets"
 date: 2024-12-08
-categories: docker swarm secrets
+categories: [vps, docker, swarm, secrets]
 tags: [docker, swarm, secrets]
 ---
 Docker Secrets può essere utilizzato per memorizzare informazioni sensibili come password, chiavi API e certificati in modo sicuro e accessibile solo ai servizi autorizzati.

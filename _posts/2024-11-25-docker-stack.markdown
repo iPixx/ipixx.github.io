@@ -2,7 +2,7 @@
 layout: post
 title: "Learning Docker - Docker Stack"
 date: 2024-11-25 22:05:00 +0100
-categories: [docker, stack]
+categories: [vps, docker, stack]
 tags: [docker, vps]
 ---
 

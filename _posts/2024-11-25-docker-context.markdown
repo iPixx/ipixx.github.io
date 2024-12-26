@@ -2,7 +2,7 @@
 layout: post
 title: "Learning Docker - Docker Context"
 date: 2024-11-25 22:10:00 +0100
-categories: [docker, context]
+categories: [vps, docker, context]
 tags: [docker, vps]
 ---
 
